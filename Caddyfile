@@ -1,0 +1,9 @@
+{{ domain }} {
+   tls off
+   root /var/www/bolt
+   fastcgi / /var/run/php/php7.0-fpm.sock php
+
+    rewrite {
+       to {path} {path}/index.html {path}/index.php /index.php/{uri_escaped}
+    }
+}

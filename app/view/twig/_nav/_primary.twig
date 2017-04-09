@@ -3,9 +3,10 @@
         <i class="fa fa-fw fa-bars"></i> MENU
     </button>
     <a class="navbar-brand" href="{{ path('dashboard') }}">
-        {# <img src="{{ asset('img/bolt-icon.svg', 'bolt') }}"> #}
-        {{ app.config.get('general/branding/name')|default('Bolt') }}
+        {# <img src="{{ asset('img/bolt-icon.svg', 'LegionMarket') }}"> #}
+        {{ app.config.get('general/branding/name')|default('LegionMarket') }}
     </a>
+    {# todo:  changed LegionMarket#}
     <a href="{{ path('dashboard') }}" class="navbar-site hidden-xs"><span>{% if app.config.get('general/sitename') %}{{ app.config.get('general/sitename') }}{% else %}Site{% endif %}</span></a>
 </div>
 

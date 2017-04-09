@@ -77,8 +77,8 @@
         <script src="{{ asset(script, 'bolt') }}"></script>
     {% endfor %}
 
-    <link rel="shortcut icon" href="{{ config.get('general/branding/favicon') ?: asset('img/favicon-bolt.ico', 'bolt') }}">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ config.get('general/branding/apple-touch-icon') ?: asset('img/apple-touch-icon.png', 'bolt') }}">
+    <link rel="shortcut icon" href="{{ config.get('general/branding/favicon') ?: asset('https://tpnfc.net/images/tpnfcLogov00.png', 'bolt') }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ config.get('general/branding/apple-touch-icon') ?: asset('https://tpnfc.net/images/tpnfcLogov00.png', 'bolt') }}">
     {% for size in ['72x72', '114x114', '144x144'] %}
         <link rel="apple-touch-icon" sizes="{{ size }}" href="{{ config.get('general/branding/apple-touch-icon-' ~ size) ?: asset('img/apple-touch-icon-' ~ size ~ '.png', 'bolt') }}">
     {% endfor %}
